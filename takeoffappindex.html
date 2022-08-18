@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <title>Takeoff Developer Application</title>
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+
+    <link rel="stylesheet" href="maincss.css"/>
+  </head>
+  <body class="bg-opacity-">
+
+
+    <div class="row g-5" id= 'list'>
+
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Takeoff Project</h4>
+        <form class="needs-validation" action="processinput.php" method="post">
+          <div class="row g-1">
+          
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">General Contractor</label>
+              <input type="text" class="form-control" id="GeneralContractorName" placeholder="" value="" name="generalContractorName">
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Project Name</label>
+              <input type="text" class="form-control" id="ProjectName" placeholder="" value="" name="projectName">
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" name="address">
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+
+
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">City</label>
+              <input type="text" class="form-control" id="city" placeholder="Project City" name="city">
+
+            </div>
+
+            <div class="col-md-4">
+              <label for="state" class="form-label">State</label>
+              <select class="form-select" id="state"  name='state'>
+                <option value="">Choose...</option>
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value= "Arizona">Arizona</option>
+                <option value="Arkansas">Arkansas</option>
+              </select>
+
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="" name="zip">
+
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="row g-3">
+            <h4 class="mb-3">Project Information</h4>
+           <div class="col-sm-7">
+             <label for="NumberofFloors" class="form-label">How many floors are in the Project?</label>
+             <input type="text" class="col-form-label-sm" id="numberOfFloors" placeholder="" value="" name="numberOfFloors">
+            </div>
+
+            <div class="col-sm-7">
+              <label for="firstName" class="form-label">How many units per floor?</label>
+              <input type="text" class="col-form-label-sm" id="numberOfUnitsPerFloor" placeholder="" value="" name="numberOfUnitsPerFloor">
+             </div>
+              <fieldset>
+                <legend  id="x"> </legend>
+               
+                 <label for="form-check" class="form-label">Do units have the same appliances per unit?</label>
+                  
+                  <input id="yesRadioButton" name="sameAppliances" type="radio" class="form-check-input" checked required  value="yes">
+                 <label class="form-check-label" for="yesRadioButton" >yes</label>
+                
+              
+                <input id="noRadioButton" name="sameAppliances" type="radio" class="form-check-input" value="no" >
+                <label class="form-check-label" for="noRadioButton" >no</label>
+             
+            </fieldset>
+              <div class="my-lg-2">
+                <label for="firstName" class="form-label">What brand of appliances are needed?</label>
+                  <div class="row gx-sm-0">
+                    <div class="form-check">
+                    <input id="CafeRadioButton" name="brands" type="radio" class="form-check-input" checked value="Cafe">
+                    <label class="form-check-label" for="yesRadioButton" >Cafe</label>
+                    </div>
+                    <div class="form-check">
+                      <input id="GERadioButton" name="brands" type="radio" class="form-check-input" value="General Electric">
+                      <label class="form-check-label" for="noRadioButton" >General Electric</label>
+                    </div>
+                    <div class="form-check">
+                      <input id="haierRadioButton" name="brands" type="radio" class="form-check-input" value="Haier">
+                      <label class="form-check-label" for="noRadioButton" >Haier</label>
+                    </div>
+                    <div class="form-check">
+                      <input id="hotpointRadioButton" name="brands" type="radio" class="form-check-input" value="Hotpoint">
+                      <label class="form-check-label" for="noRadioButton" >Hotpoint</label>
+                    </div>
+
+
+                  </div>
+              </div>
+          </div>
+          <button class="w-25 btn btn-primary btn-lg" type="submit" id='continue'>Continue </button>
+        </form>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; Created by: Andrew Gordon</p>
+
+  </footer>
+</div>
+
+  </body>
+</html>

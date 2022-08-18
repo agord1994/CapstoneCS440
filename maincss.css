@@ -1,0 +1,30 @@
+.container {
+  max-width: 960px;
+}
+
+
+body{
+    background-color: #89cff0;
+    
+}
+
+
+
+#list{
+    padding: 5%;
+}
+
+#continue{
+    background-color: grey;
+}
+
+#x{
+    color: blue;
+}
+
+#appliancegrid {
+
+    border-left: 1px;
+
+}
+
